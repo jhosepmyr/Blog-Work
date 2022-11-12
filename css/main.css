@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+/* general background */
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../assets/img/Cover.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* social media */
+header .header-icons-container {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .icons span {
+    color: white;
+}
+
+/* personal information */
+.home-main {
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+nav  {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.home-main-text {
+    font-family: 'Roboto mono', monospace;
+    font-size: 20px;
+    font-weight: 500px;
+    letter-spacing: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    color: white;
+}
