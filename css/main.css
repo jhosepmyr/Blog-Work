@@ -28,7 +28,7 @@ a {
 
 
 /* social media */
-header .header-icons-container {
+/* header .header-icons-container {
     width: 100%;
     padding: 10px;
     display: grid;
@@ -45,7 +45,7 @@ header .header-icons-container .icons {
 }
 header .icons span {
     color: white;
-}
+} */
 
 /* personal information */
 .home-main {
@@ -55,14 +55,12 @@ header .icons span {
 }
 
 nav  {
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 20px;
+    bottom: 0;
+    right: 0;
     position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    justify-content: center;
 }
 
 
@@ -72,21 +70,38 @@ nav  {
     font-weight: 500px;
     letter-spacing: 10px;
     margin: 10px;
-    width: 250px;
-    text-align: center;
+    width: 200px;
+    padding: 20px;
+    text-align: right;
     color: white;
 }
 
-@media (max-width: 600px) {
-    nav  {
-        display: grid;
-        justify-items: center;
-    }  
-    .home-main-text {
-        margin: 12px;
+@media (max-width: 1000px) {
+    nav {
+        top: 0;
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
     }
-    header .header-icons-container .icons {
-        justify-items: center;
-        justify-self: center;
+    .home-main-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    nav {
+        top: 0;
+        right: 0;
+        height: auto;
+        display:block;
+
+
+    }
+    .home-main-text {
+        text-align: right;
+        height: auto;
+        padding: 10px;
     }
 }
